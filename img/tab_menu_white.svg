@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.52 40.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="tab_메뉴아이콘" data-name="tab 메뉴아이콘">
+      <path class="cls-1" d="M4.61,8H36.91c2.54,0,4.61-1.8,4.61-4s-2.08-4-4.61-4H4.61C2.08,0,0,1.8,0,4s2.08,4,4.61,4Z"/>
+      <path class="cls-1" d="M4.61,40.23H36.91c2.54,0,4.61-1.8,4.61-4s-2.08-4-4.61-4H4.61c-2.54,0-4.61,1.8-4.61,4s2.08,4,4.61,4Z"/>
+      <path class="cls-1" d="M4.61,24.11H36.91c2.54,0,4.61-1.8,4.61-4s-2.08-4-4.61-4H4.61c-2.54,0-4.61,1.8-4.61,4s2.08,4,4.61,4Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+:root{
+    --font-bold:600;
+    --font-midium:400;
+    --font-thin:300;
+    --main-color:#603D2F;
+    --point-color: #646464;
+    --font-size-pc:20px;
+    --font-size-tab:18px;
+    --font-size-mo:14px;
+    --inactive-color:#b7b7b7;
+    --space-small:1.5rem;
+    /* space-small : 같은 맥락 구분 */
+    --space-middle:2.5rem;
+    /* space-middle : 다른 맥락 구분 */
+    --space-large:3.5rem;
+    /* space-large : 영역간의 위아래 여백 */
+    --space-xlarge:7rem;
+    /* space-xlarge : 영역간 구분 */
+}

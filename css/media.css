@@ -1,0 +1,301 @@
+.mo{
+    /* pc사이트 */
+    display: none;
+}
+.station2{
+    display: none!important;
+}
+/* 1660 */
+@media (max-width:1660px){
+    header{
+        height: 4rem;
+    }
+    header:before{
+        /* header 구분선 */
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.2rem;
+        left: 0;
+        top: 3.8rem;
+        background-color: var(--main-color);
+        z-index: -1;
+    }
+    .logo a{
+        height: 4rem;
+    }
+    .logo a img{
+        height: 4rem;
+    }
+    .station1{
+        display: block!important;
+        width: 100%;
+        height: auto;
+    }
+    .station2{
+        display: none!important;
+    }
+    .commonFrame.ml{
+        padding-top: calc(var(--space-large));
+    }
+}
+@media (max-width:1280px){
+    /* 1650이였으나 헤더영역이 배너를 가려 조정 */
+    .mo{display: block;}
+    html{
+        font-size:var(--font-size-tab);
+    }
+    .pc{
+        display: none;
+    }
+    .commonFrame{
+        width: auto;
+        margin: 0 1rem;
+    }
+    .type1{
+        margin-top: var(--space-large);
+        margin-bottom: var(--space-large);
+    }
+    .header_mo{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 5rem;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+    .logo_mo{
+        display: flex;
+        align-items: center;
+    }
+    .logo_mo a{
+    }
+    .logo_mo img{
+        height: 5rem;
+    }
+    #btn_gnb{
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        cursor: pointer;
+    }
+    #btn_gnb img{
+        height: 1.7rem;
+    }
+    .hidden_gnb{
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: white;
+        transform: translateX(100%);
+        transition: all 0.6s ease 0s;
+    }
+    .hidden_gnb.on{
+        /* 버튼 클릭 했을 때 gnb영역 오른쪽에서 나오게 하는 것 */
+        transform: translateX(0%);
+    }
+    .hidden_gnb_top{
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+    }
+    /* 로고 중앙배치 시 활성화 */
+    /* .hidden_gnb_top::before{
+        content: "";
+        width: 2rem;
+        border: 1px solid red;
+    } */
+    #btn_close_gnb{
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        cursor: pointer;
+    }
+    #btn_close_gnb img{
+        height: 1.7rem;
+    }
+    .gnb_mo_wrap{
+        margin: var(--space-middle) 0;
+        height: calc(100vh - 16rem);
+        overflow: auto;
+        /* 메뉴단이 영역아래로 밀렸을 때 보이게 할 수 있도록 스크롤 생성 */
+        min-height: 15rem;
+    }
+    .hidden_gnb_bottom{
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sns{
+        display: flex;
+        gap: var(--space-small);
+    }
+    .sns img{
+        height: 1.5rem;
+    }
+    .gnb_mo a{
+        display: flex;
+        height: 2.5rem;
+        align-items: center;
+        padding-left: 1rem;
+    }
+    .gnb_mo>li{
+        border-bottom: 1px solid var(--inactive-color);
+        position: relative;
+    }
+    .gnb_mo>li::after{
+        content: "";
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        background: url(../img/more.svg) no-repeat 50% 50% / contain;
+        transform: rotate(180deg);
+        transition: all 0.3s ease 0s;
+    }
+    .gnb_mo ul{
+        height: 0;
+        overflow: hidden;
+        transition: all 0.6s ease 0s;
+        color: var(--main-color);
+    }
+    .gnb_mo>li:hover::after{
+        transform: rotate(0deg);
+    }
+    .gnb_mo>li:hover ul{
+        height: 12.5rem;
+    }
+    .type1{
+        gap: 1rem;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .storytxt>h2{
+        text-align: center;
+    }
+    .type1>figure{
+        text-align: center;
+    }
+    .type1>figure>img{
+        width: 80%;
+    }
+    .commonFrame.desc1{
+        margin-top: var(--space-middle);
+        margin-bottom: var(--space-middle);
+        gap: 1rem;
+    }
+    .commonFrame.desc2{
+        margin-top: var(--space-middle);
+        margin-bottom: var(--space-middle);
+        gap: 1rem;
+    }
+    .title2{
+        text-align: center;
+        margin-bottom: var(--space-large);
+    }
+    .commonFrame.fade{
+        margin-top: var(--space-middle);
+        margin-bottom: var(--space-middle);
+        gap: 1rem;
+    }
+    .commonFrame.desc3 br{
+        display: none;
+    }
+    .commonFrame.desc3{
+        gap: 1rem;
+    }
+    .commonFrame.station5{
+        margin: 0 1rem;
+    }
+
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--font-size-mo);
+    }
+    .station1{
+        display: none!important;
+    }
+    .station2{
+        display: block!important;
+        width: 100%;
+        height: auto;
+    }
+    .type1{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .storytxt>h2{
+        text-align: center;
+    }
+    .commonFrame.desc1{
+        flex-direction: column-reverse;
+        gap: var(--space-small);
+    }
+    .commonFrame.desc2{
+        flex-direction: column;
+        gap: var(--space-small);
+    }
+    .commonFrame .txt{
+        padding-top: 0;
+    }
+    .commonFrame.fade{
+        align-items: stretch;
+        flex-direction: column;
+        gap: var(--space-small);
+    }
+    .station3{
+        width: 100%;
+    }
+    .station4{
+        width: 100%;
+    }
+    footer .commonFrame{
+        flex-direction: column-reverse;
+        gap: var(--space-small);
+        align-items: center;
+    }
+    .foot_sns{
+        justify-content: center;
+    }
+    .foot2{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: var(--space-small);
+    }
+    .foot_menu{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0 var(--space-small);
+    }
+    .info{
+        justify-content: center;
+    }
+    .copy{
+        text-align: center;
+    }
+    .commonFrame.desc3{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .commonFrame.desc3 figure{
+        height: 23rem;
+        flex-grow: 0;
+        flex-basis: auto;
+    }
+}
+@media (max-width:300px){
+    .hidden_gnb_bottom{
+        flex-direction: column;
+    }
+}

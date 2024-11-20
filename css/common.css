@@ -1,0 +1,88 @@
+html{
+    font-family:Pretendard,sans-serif;
+    font-size: var(--font-size-pc);
+    font-weight: var(--font-midium);
+}
+
+.commonFrame{
+    width: 1280px;
+    margin: 0 auto;
+}
+.commonFrame1{
+    width: 1065px;
+    margin: 0 auto;
+}
+strong{
+    color: var(--main-color);
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: var(--font-bold);
+    line-height: 1.1;
+}
+h3{
+    font-size: 1.1rem;
+    font-weight: var(--font-bold);
+    line-height: 1.1;
+}
+h4{
+    font-size: 1rem;
+    font-weight: var(--font-bold);
+    line-height: 1.1;
+}
+p{
+    font-size: 1rem;
+    font-weight: var(--font-midium);
+    line-height: 1.4;
+}
+.pfont{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+
+/* button style */
+.btn_common{
+    /* 선택한 태그가 a태그뿐만아니라 span태그 같은 다른태그가 될 수 있는 것을 가정 */
+    border: 2px solid var(--main-color);
+    color: black;
+    padding: 0.4rem 1.5rem;
+    display: inline-block;
+    /* a태그경우 인라인형태이므로 display로 조정 */
+    cursor: pointer;
+}
+.btn_common.big{
+    padding: 0.4rem 2rem;
+}
+.btn_common.small{
+    padding: 0.4rem 1rem;
+}
+.btn_common:hover{
+    /* 마우스 올렸을 때 */
+    background-color: var(--main-color);
+    color: white;
+}
+.btn_common:active{
+    /* 마우스로 눌렀을 때 */
+    background-color: black;
+    color: white;
+}
+.btn_common.inactive{
+    /* 비활성화 */
+    color: var(--inactive-color);
+    border: var(--inactive-color);
+    pointer-events: none;
+}
+.btn_common.white{
+    color: white;
+    border: 2px solid var(--main-color);
+}
+.btn_common.yes{
+    background-color: var(--main-color);
+    color: white;
+}
+.enp{
+    color: var(--point-color);
+    font-weight: var(--font-thin);
+}
