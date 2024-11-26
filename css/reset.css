@@ -36,3 +36,24 @@ img,video{
 }
 input{outline: 0;}
 /* 입력박스 아웃라인 굵기 감소 */
+
+table{border-collapse: collapse;}
+/* 셀과 셀 사이의 여백 */
+
+/* 각 태그 사용시 폰트를 지정한 기본폰트로 설정 */
+form,label,select,option,textarea,input{
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+/* 선택했을 때 가장자리에있는 선을 없에는 것 */
+textarea,input,option{
+    outline: 0;
+}
+
+input[type="submit"]{
+    background-color: transparent;
+}
+input[type="reset"]{
+    background-color: transparent;
+}

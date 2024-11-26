@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </head>
+<body>
+    <aside class="fixed_menu"></aside>
+    <div class="header_wrap"></div>
+    <main>
+        <div class="sub_banner sub1">
+            <div class="ban_txt">
+                <h2>공지사항</h2>
+                <p>따뜻한 분위기 속에서 소중한 소식과 이벤트를 함께 나눌 수 있는 공간입니다.</p>
+            </div>
+        </div>
+
+        <h3 class="commonFrame large_margin">🍂가을 시즌 한정 음료 출시 안내🍂</h3>
+        <div class="commonFrame option_bar border">
+            <section class="view_info">
+                <span>CAFEBARA 관리자</span>
+                <span>2024-09-10 14:00:10</span>
+                <span>조회수 32</span>
+            </section>
+            <section class="option_admin button_list">
+                <a href="#"><img src="./img/icon_edit.svg" alt="수정하기"></a>
+                <a href="#" id="btn_delte"><img src="./img/icon_delete.svg" alt="삭제하기"></a>
+            </section>
+        </div>
+        <div class="commonFrame view_txt smb"></div>
+        <div class="commonFrame buttons">
+            <a href="/notice_list.html" class="btn_common lmb">목록</a>
+        </div>
+    </main>
+    <div class="modal"></div>
+    <div class="popup">
+        <div class="popup_title">작성한 글을 삭제하시겠습니까?</div>
+        <div class="popup_ctrl">
+            <span class="btn_common yes" id="btn_dlete_yes">네</span>
+            <span class="btn_common no" id="btn_dlete_no">아니요</span>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script>
+        let btn_delte = document.querySelector("#btn_delte")
+        let modal = document.querySelector(".modal")
+        let popup = document.querySelector(".popup")
+        let btn_dlete_yes = document.querySelector("#btn_dlete_yes")
+        let btn_dlete_no = document.querySelector("#btn_dlete_no")
+
+        // popup
+        btn_delte.addEventListener("click",function(event){
+            event.preventDefault()
+            modal.classList.add("on")
+            popup.classList.add("on")
+        })
+
+        // 삭제 네
+        btn_dlete_yes.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popup.classList.remove("on")
+        })
+        // 삭제 아니요
+        btn_dlete_no.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popup.classList.remove("on")
+        })
+    </script>
+    <script src="./js/include.js"></script>
+</body>
+</html>

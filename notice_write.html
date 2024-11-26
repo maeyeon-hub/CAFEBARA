@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </head>
+<body>
+    <aside class="fixed_menu"></aside>
+    <div class="header_wrap"></div>
+    <main>
+        <div class="sub_banner sub1">
+            <div class="ban_txt">
+                <h2>공지사항</h2>
+                <p>따뜻한 분위기 속에서 소중한 소식과 이벤트를 함께 나눌 수 있는 공간입니다.</p>
+            </div>
+        </div>
+        <div class="commonFrame option_bar">
+            <label for="fixed_lise" class="checkbox">
+                <input type="checkbox" id="fixed_lise">
+                <span class="custom_checkbox"></span>
+                공지알림
+            </label>
+        </div>
+        <form action="#" class="commonFrame">
+            <div class="form_title">
+                <label for="title">제목</label>
+                <input type="text" id="title" placeholder="제목을 입력해주세요.">
+            </div>
+            <div class="form_desc">
+                <label for="desc">게시글 내용</label>
+                <textarea id="desc" placeholder="공지사항 내용을 입력해주세요."></textarea>
+            </div>
+        </form>
+        <div class="commonFrame form_submit">
+            <input type="submit" value="작성완료" class="btn_common" id="submit_write">
+            <!-- <input type="reset" value="작성취소" class="btn_common" id="reset_write"> -->
+             <a href="/notice_list.html" class="btn_common">작성취소</a>
+        </div>
+
+
+        <script>
+            // 임시기능
+            document.querySelector("#submit_write").addEventListener("click",function(){
+                location.href = "/notice_list.html"
+            })
+        </script>
+    </main>
+
+    <footer>
+    </footer>
+    <script src="./js/include.js"></script>
+</body>
+</html>

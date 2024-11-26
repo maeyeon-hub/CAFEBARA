@@ -1,155 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>커피 이야기</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/variable.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="./css/scroll.css">
-    <script src="./js/header.js"></script>
     <script src="./js/story_coffee.js"></script>
-<!-- swiper js(슬라이드) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- 프리텐다드 폰트 -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-<!-- 꾸밈 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="pc">
-        <div class="commonFrame">
-            <h1 class="logo">
-                <a href="./index.html">
-                    <img src="./img/logo.svg" alt="카페바라로고">
-                </a>
-            </h1>
-            <ul class="gnb">
-                <li >
-                    <a href="#" class="pfont">CAFEBARA</a>
-                    <ul>
-                        <li><a href="#" class="pfont">CAFEBARA</a></li>
-                        <li><a href="#">매장</a></li>
-                        <li><a href="#">브랜드 브로슈어</a></li>
-                    </ul>
-                </li>
-                <li >
-                    <a href="./story_coffee.html">메뉴 이야기</a>
-                    <ul>
-                        <li><a href="./story_coffee.html">커피 이야기</a></li>
-                        <li><a href="#">디저트 이야기</a></li>
-                        <li><a href="#">델리 이야기</a></li>
-                    </ul>
-                </li>
-                <li >
-                    <a href="#">브랜드 지원</a>
-                    <ul>
-                        <li><a href="#">BARA 페어링 플랜트</a></li>
-                        <li><a href="#">BARA 디저트 플랜트</a></li>
-                        <li><a href="#">C&D 센터</a></li>
-                        <li><a href="#">SEP 센터</a></li>
-                    </ul>
-                </li>
-                <li >
-                    <a href="#">가맹점 창업안내</a>
-                    <ul>
-                        <li><a href="#">가맹점 개설안내</a></li>
-                        <li><a href="#">창업 설명회</a></li>
-                        <li><a href="#">온라인 창업 신청</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">가맹점 전용 금융 상품</a></li>
-                    </ul>
-                </li>
-                <li >
-                    <a href="#">새소식 & 공지</a>
-                    <ul>
-                        <li><a href="#">공지사항</a></li>
-                    </ul>
-                </li>
-
-
-            </ul>
-        </div>
-    </header>
-    <div class="header_mo mo">
-        <h1 class="logo_mo">
-            <a href="./index.html"><img src="./img/logo.svg" alt="카페바라로고"></a>
-        </h1>
-        <span id="btn_gnb">
-            <img src="./img/tab_menu.svg" alt="메뉴 열기 버튼">
-        </span>
-        <div class="hidden_gnb">
-            <div class="hidden_gnb_top">
-                <h1 class="logo_mo">
-                    <a href="./index.html"><img src="./img/logo.svg" alt="카페바라로고"></a>
-                </h1>
-                <span id="btn_close_gnb">
-                    <img src="./img/menu_X.svg" alt="메뉴 닫기 버튼">
-                </span>
-            </div>
-            <section class="gnb_mo_wrap">
-                <ul class="gnb_mo">
-                    <li >
-                        <a href="#">CAFEBARA</a>
-                        <ul>
-                            <li><a href="#">CAFEBARA</a></li>
-                            <li><a href="#">매장</a></li>
-                            <li><a href="#">브랜드 브로슈어</a></li>
-                        </ul>
-                    </li>
-                    <li >
-                        <a href="./story_coffee.html">메뉴 이야기</a>
-                        <ul>
-                            <li><a href="./story_coffee.html">커피 이야기</a></li>
-                            <li><a href="#">디저트 이야기</a></li>
-                            <li><a href="#">델리 이야기</a></li>
-                        </ul>
-                    </li>
-                    <li >
-                        <a href="#">브랜드 지원</a>
-                        <ul>
-                            <li><a href="#">BARA 페어링 플랜트</a></li>
-                            <li><a href="#">BARA 디저트 플랜트</a></li>
-                            <li><a href="#">C&D 센터</a></li>
-                            <li><a href="#">SEP 센터</a></li>
-                        </ul>
-                    </li>
-                    <li >
-                        <a href="#">가맹점 창업안내</a>
-                        <ul>
-                            <li><a href="#">가맹점 개설안내</a></li>
-                            <li><a href="#">창업 설명회</a></li>
-                            <li><a href="#">온라인 창업 신청</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">가맹점 전용 금융 상품</a></li>
-                        </ul>
-                    </li>
-                    <li >
-                        <a href="#">새소식 & 공지</a>
-                        <ul>
-                            <li><a href="#">공지사항</a></li>
-                        </ul>
-                    </li>
-    
-    
-                </ul>
-            </section>
-            <div class="hidden_gnb_bottom">
-                <a href="#" class="btn_common">창업안내 바로가기</a>
-                <ul class="sns">
-                    <li><a href="#" target="_blank"><img src="./img/sns_youtube.svg" alt="유튜브"></a></li>
-                    <li><a href="#" target="_blank"><img src="./img/sns_meta.svg" alt="메타"></a></li>
-                    <li><a href="#" target="_blank"><img src="./img/sns_instar.svg" alt="인스타"></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <aside class="fixed_menu"></aside>
+    <div class="header_wrap"></div>
     <main>
         <h3 class="commonFrame ml">커피 이야기</h3>
         <div class="commonFrame desc3">
@@ -228,40 +85,8 @@
             <div class="swiper-pagination"></div>
         </div>
     </main>
-    <footer>
-        <div class="commonFrame">
-            <section class="foot1">
-                <ul class="foot_menu">
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">위치기반서비스 이용약관</a></li>
-                    <li><a href="#">이메일 무단수집거부</a></li>
-                </ul>
-                <dl class="info">
-                    <dt>대표이사 : </dt>
-                    <dd>이미연</dd>
-                    <dt>개인정보보호책임자 : </dt>
-                    <dd>이미연</dd>
-                    <dt>사업자등록번호 : </dt>
-                    <dd>123-12-12345</dd>
-                    <dt>통신판매업종신고종 : </dt>
-                    <dd>제 2024-포트폴리오-이미연</dd>
-                    <dt>대표이메일 : </dt>
-                    <dd>CafeBara@gmail.com</dd>
-                </dl>
-                <div class="copy">본 홈페이지는 취업용 포트폴리오 용도로 제작되었습니다.</div>
-            </section>
-            <section class="foot2">
-                <ul class="foot_sns">
-                    <li><a href="#"><img src="./img/sns_instar.svg" alt="instargram"></a></li>
-                    <li><a href="#"><img src="./img/sns_meta.svg" alt="meta"></a></li>
-                    <li><a href="#"><img src="./img/sns_youtube.svg" alt="youtube"></a></li>
-                </ul>
-                <h1 class="flogo">
-                    <a href="./index.html"><img src="./img/logo_white.svg" alt="CAFEBARA"></a>
-                </h1>
-            </section>
-        </div>
-    </footer>
+    <footer></footer>
+    <script src="./js/include.js"></script>
+
 </body>
 </html>
